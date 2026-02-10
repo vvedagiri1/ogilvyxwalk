@@ -5,7 +5,9 @@ export default function decorate(block) {
   // 2. Fetch weather data (Example using a placeholder API)
   const API_KEY = '3237161ae1634c9a8e051934260902';
   const loc = 'ny';
-  const response = await fetch(`https://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${loc}`);
+  const url = `https://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${loc}`;
+  const options ={};
+  const response = await fetch(url,options);
   const data = await response.json();
 
   // 3. Create HTML structure
