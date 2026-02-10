@@ -1,6 +1,6 @@
 export default function decorate(block) {
-  const location = block.textContent.trim();
-  block.textContent = ''; // Clear the block
+  //const location = block.textContent.trim();
+  //block.textContent = ''; // Clear the block
 
   // 2. Fetch weather data (Example using a placeholder API)
   /*const API_KEY = '3237161ae1634c9a8e051934260902';
