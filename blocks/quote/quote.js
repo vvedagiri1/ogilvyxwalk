@@ -18,14 +18,14 @@ export default function decorate(block) {
     </div>
   `;
   
-  block.innerHTML = weatherHTML;
+ // block.innerHTML = weatherHTML;
 
 
 
   
-  //const [quoteWrapper] = block.children;
+  const [quoteWrapper] = block.children;
 
-  //const blockquote = document.createElement('blockquote');
-  //blockquote.textContent = quoteWrapper.textContent.trim();
-  //quoteWrapper.replaceChildren(blockquote);
+  const blockquote = document.createElement('blockquote');
+  blockquote.textContent = quoteWrapper.textContent.trim();
+  quoteWrapper.replaceChildren(blockquote);
 }
